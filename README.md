@@ -18,3 +18,24 @@ Download and install Docker Desktop from the official website for your operating
 
 ```bash
 git clone https://github.com/khalidMhd/node-docker.git
+```
+### Step 3: Build the Docker image 
+
+This command will build the Docker image based on the instructions in the Dockerfile and tag it as "node-app".
+
+```bash
+docker build -t node-app . 
+```
+
+### Step 4: Run the Docker container 
+
+Run the Docker container After the image is built, you can run the Docker container using the following command:
+
+```bash
+docker run -p 3000:3000 node-app 
+```
+
+### Step 5: Access the project
+
+Access the Express.js application Open your web browser and navigate to http://localhost:3000. You should see the message "Hello, Docker!" displayed on the page.
+
